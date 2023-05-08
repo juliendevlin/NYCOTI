@@ -46,9 +46,10 @@ const handleSubmit = (event) => {
   fullName.value = '';
   message.value = '';
 
-  // display submission confirmatiom
+  // display and focus submission confirmatiom
   const dialog = document.querySelector('dialog');
   dialog.style.display = 'flex';
+  dialog.focus();
 }
 
 // handler to close submission confirmation
